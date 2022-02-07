@@ -7,22 +7,26 @@ class Board extends StatelessWidget {
   const Board({required this.data, Key? key}) : super(key: key);
 
   final List data;
+  final double cacheExtent = 100.00;
+  final int indexCountStart = 1;
+  final double seperatorHeight = 16;
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: AppSpacing.xl),
-        child: Column(
-          children: <Widget>[
-            for (var i = 0; i < data.length; i++)
-              Entry(
-                name: data[i]['name'].toString(),
-                score: data[i]['score'],
-                id: i + 1,
-              ),
-          ],
-        ),
+    return ListView.separated(
+      padding: const EdgeInsets.symmetric(horizontal: AppSpacing.xl),
+      itemCount: data.length,
+      addAutomaticKeepAlives: false,
+      cacheExtent: cacheExtent,
+      itemBuilder: (BuildContext context, int index) {
+        return Entry(
+          name: data[index]['name'].toString(),
+          score: data[index]['score'],
+          id: index + indexCountStart,
+        );
+      },
+      separatorBuilder: (BuildContext context, int index) => Container(
+        height: seperatorHeight,
       ),
     );
   }
