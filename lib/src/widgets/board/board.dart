@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
-import '../config/app_spacing.dart';
+import '../../config/app_spacing.dart';
 
 import './entry.dart';
 
 class Board extends StatelessWidget {
-  const Board({required this.data, Key? key}) : super(key: key);
+  const Board({
+    Key? key,
+    required this.data,
+  }) : super(key: key);
 
   final List data;
-  final double cacheExtent = 100.00;
+  final double cacheExtent = 100;
   final int indexCountStart = 1;
   final double seperatorHeight = 16;
+  final int indexHelper = 2;
 
   @override
   Widget build(BuildContext context) {
@@ -19,13 +23,16 @@ class Board extends StatelessWidget {
       addAutomaticKeepAlives: false,
       cacheExtent: cacheExtent,
       itemBuilder: (BuildContext context, int index) {
-        return Entry(
-          name: data[index]['name'].toString(),
-          score: data[index]['score'],
-          id: index + indexCountStart,
-        );
+        return index > indexHelper
+            ? Entry(
+                name: data[index]['name'].toString(),
+                score: data[index]['score'],
+                picture: data[index]['picture'].toString(),
+                id: index + indexCountStart,
+              )
+            : const SizedBox();
       },
-      separatorBuilder: (BuildContext context, int index) => Container(
+      separatorBuilder: (BuildContext context, int index) => SizedBox(
         height: seperatorHeight,
       ),
     );
