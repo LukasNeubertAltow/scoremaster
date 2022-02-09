@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:scoremaster/src/config/app_colors.dart';
 import 'package:scoremaster/src/config/app_spacing.dart';
@@ -11,8 +9,8 @@ class LeaderBoardPage extends StatelessWidget {
     data.sort((a, b) => (b['score'] as num).compareTo(a['score'] as num));
   }
 
-  final title = 'Leaderboard';
-  final double appBarShadowElevation = 0;
+  static const _title = 'Leaderboard';
+  static const double _appBarShadowElevation = 0;
 
   final List<Map<String, Object>> data = [
     {
@@ -22,17 +20,17 @@ class LeaderBoardPage extends StatelessWidget {
     },
     {
       'name': 'Phillip2000',
-      'score': 7831,
+      'score': 78310,
       'picture': 'profile-2.jpg',
     },
     {
       'name': 'hans',
-      'score': 234,
+      'score': 23400,
       'picture': 'profile-3.jpg',
     },
     {
       'name': 'kevin96',
-      'score': 3256,
+      'score': 325600,
       'picture': 'profile-4.jpg',
     },
     {
@@ -2991,9 +2989,9 @@ class LeaderBoardPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(title),
+        title: const Text(_title),
         backgroundColor: AppColors.background,
-        elevation: appBarShadowElevation,
+        elevation: _appBarShadowElevation,
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,

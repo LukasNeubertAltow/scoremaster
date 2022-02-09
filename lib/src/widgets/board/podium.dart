@@ -8,47 +8,55 @@ class Podium extends StatelessWidget {
     required this.data,
   }) : super(key: key);
 
+  Map get _data1 => data[_place1];
+  Map get _data2 => data[_place2];
+  Map get _data3 => data[_place3];
+
   final List data;
-  final int place1 = 0;
-  final int place2 = 1;
-  final int place3 = 2;
-  final double positionLeftRightPlace = 25;
-  final double positionTop = 80;
-  final double viewHeight = 360;
-  final double viewWidth = 428;
-  final int index1 = 1;
-  final int index2 = 2;
-  final int index3 = 3;
-  final double radius = 200;
-  final double positionShadowLeft = 115;
-  final double positionShadowTop = 76;
-  final double shadowSize = 200;
-  final double shadowSpreadRadius = 10;
-  final double shadowBlurRadius = 15;
-  final double shadowOpacity = 0.2;
+  static const int _place1 = 0;
+  static const int _place2 = 1;
+  static const int _place3 = 2;
+  static const int _index1 = 1;
+  static const int _index2 = 2;
+  static const int _index3 = 3;
+
+  static const double _positionLeftRightPlace = 25;
+  static const double _positionTop = 80;
+
+  static const double _positionShadowLeft = 115;
+  static const double _positionShadowTop = 76;
+  static const double _shadowSize = 200;
+  static const double _shadowSpreadRadius = 10;
+  static const double _shadowBlurRadius = 15;
+  static const double _shadowOpacity = 0.2;
+
+  static const double _viewHeight = 360;
+  static const double _viewWidth = 428;
+
+  static const double _radius = 200;
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: viewHeight,
-      width: viewWidth,
+      height: _viewHeight,
+      width: _viewWidth,
       child: Stack(
         children: [
           Positioned(
-            left: positionShadowLeft,
-            top: positionShadowTop,
+            left: _positionShadowLeft,
+            top: _positionShadowTop,
             child: Container(
-              height: shadowSize,
-              width: shadowSize,
+              height: _shadowSize,
+              width: _shadowSize,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(
-                  Radius.circular(radius),
+                borderRadius: const BorderRadius.all(
+                  Radius.circular(_radius),
                 ),
                 boxShadow: [
                   BoxShadow(
-                    color: AppColors.accent.withOpacity(shadowOpacity),
-                    spreadRadius: shadowSpreadRadius,
-                    blurRadius: shadowBlurRadius,
+                    color: AppColors.accent.withOpacity(_shadowOpacity),
+                    spreadRadius: _shadowSpreadRadius,
+                    blurRadius: _shadowBlurRadius,
                   ),
                 ],
               ),
@@ -58,31 +66,31 @@ class Podium extends StatelessWidget {
             fit: StackFit.expand,
             children: [
               Positioned(
-                left: positionLeftRightPlace,
-                top: positionTop,
+                left: _positionLeftRightPlace,
+                top: _positionTop,
                 child: PodiumPlace(
-                  name: data[place2]['name'],
-                  score: data[place2]['score'],
-                  picture: data[place2]['picture'],
-                  index: index2,
+                  name: _data2['name'],
+                  score: _data2['score'],
+                  picture: _data2['picture'],
+                  index: _index2,
                 ),
               ),
               Positioned(
-                right: positionLeftRightPlace,
-                top: positionTop,
+                right: _positionLeftRightPlace,
+                top: _positionTop,
                 child: PodiumPlace(
-                  name: data[place3]['name'],
-                  score: data[place3]['score'],
-                  picture: data[place3]['picture'],
-                  index: index3,
+                  name: _data3['name'],
+                  score: _data3['score'],
+                  picture: _data3['picture'],
+                  index: _index3,
                 ),
               ),
               Positioned(
                 child: PodiumPlace(
-                  name: data[place1]['name'],
-                  score: data[place1]['score'],
-                  picture: data[place1]['picture'],
-                  index: index1,
+                  name: _data1['name'],
+                  score: _data1['score'],
+                  picture: _data1['picture'],
+                  index: _index1,
                 ),
               ),
             ],

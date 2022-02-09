@@ -10,30 +10,31 @@ class Board extends StatelessWidget {
   }) : super(key: key);
 
   final List data;
-  final double cacheExtent = 100;
-  final int indexCountStart = 1;
-  final double seperatorHeight = 16;
-  final int indexHelper = 2;
+  List<dynamic> get _boardData => data.sublist(_sublistHelper);
+
+  static const double _cacheExtent = 100;
+  static const int _indexCountStart = 4;
+  static const double _seperatorHeight = 16;
+
+  static const int _sublistHelper = 3;
 
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
       padding: const EdgeInsets.symmetric(horizontal: AppSpacing.xl),
-      itemCount: data.length,
+      itemCount: _boardData.length,
       addAutomaticKeepAlives: false,
-      cacheExtent: cacheExtent,
+      cacheExtent: _cacheExtent,
       itemBuilder: (BuildContext context, int index) {
-        return index > indexHelper
-            ? Entry(
-                name: data[index]['name'].toString(),
-                score: data[index]['score'],
-                picture: data[index]['picture'].toString(),
-                id: index + indexCountStart,
-              )
-            : const SizedBox();
+        return Entry(
+          name: _boardData[index]['name'].toString(),
+          score: _boardData[index]['score'],
+          picture: _boardData[index]['picture'].toString(),
+          id: index + _indexCountStart,
+        );
       },
-      separatorBuilder: (BuildContext context, int index) => SizedBox(
-        height: seperatorHeight,
+      separatorBuilder: (BuildContext context, int index) => const SizedBox(
+        height: _seperatorHeight,
       ),
     );
   }

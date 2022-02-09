@@ -16,13 +16,11 @@ class Entry extends StatelessWidget {
   final String picture;
   final int score;
   final int id;
-  final double maxWidth = 500;
-  final double spaceNameScore = 5;
-  final double nameWidth = 128;
-  final double scoreWidth = 70;
-  final double iconSize = 35;
-  final double radius = 40;
-  final double imageSize = 69;
+
+  static const double _scoreWidth = 70;
+  static const double _iconSize = 35;
+  static const double _radius = 40;
+  static const double _imageSize = 69;
 
   @override
   Widget build(BuildContext context) {
@@ -35,31 +33,31 @@ class Entry extends StatelessWidget {
               overflow: TextOverflow.ellipsis,
               style: const TextStyle(fontSize: AppFontSize.bodyText1),
             ),
-            Icon(
+            const Icon(
               Icons.arrow_drop_up_sharp,
               color: AppColors.accent,
-              size: iconSize,
+              size: _iconSize,
             ),
           ],
         ),
         const SizedBox(width: AppSpacing.xl),
         Expanded(
           child: Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: AppColors.primary,
               borderRadius: BorderRadius.all(
-                Radius.circular(radius),
+                Radius.circular(_radius),
               ),
             ),
             child: Row(
               children: <Widget>[
                 ClipRRect(
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(radius),
+                  borderRadius: const BorderRadius.all(
+                    Radius.circular(_radius),
                   ),
                   child: SizedBox(
-                    height: imageSize,
-                    width: imageSize,
+                    height: _imageSize,
+                    width: _imageSize,
                     child: Image.asset(
                       'assets/mock/pictures/$picture',
                       fit: BoxFit.cover,
@@ -83,7 +81,7 @@ class Entry extends StatelessWidget {
                           ),
                         ),
                         SizedBox(
-                          width: scoreWidth,
+                          width: _scoreWidth,
                           child: Text(
                             score.toString(),
                             overflow: TextOverflow.ellipsis,
