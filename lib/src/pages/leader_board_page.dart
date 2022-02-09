@@ -1,5 +1,8 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:scoremaster/src/config/app_colors.dart';
+import 'package:scoremaster/src/config/app_spacing.dart';
 import '../widgets/board/board.dart';
 import '../widgets/board/podium.dart';
 
@@ -18,7 +21,7 @@ class LeaderBoardPage extends StatelessWidget {
       'picture': 'profile-1.jpg',
     },
     {
-      'name': 'peter2000',
+      'name': 'Phillip2000',
       'score': 7831,
       'picture': 'profile-2.jpg',
     },
@@ -311,7 +314,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -340,7 +344,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -369,7 +374,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -398,7 +404,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -427,7 +434,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -456,7 +464,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -485,7 +494,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -514,7 +524,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -543,7 +554,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -572,7 +584,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -601,7 +614,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -630,7 +644,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -659,7 +674,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -688,7 +704,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -717,7 +734,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -746,7 +764,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -775,7 +794,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -804,7 +824,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -833,7 +854,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -862,7 +884,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -891,7 +914,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -920,7 +944,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -949,7 +974,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -978,7 +1004,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1007,7 +1034,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1036,7 +1064,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1065,7 +1094,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1094,7 +1124,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1123,7 +1154,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1152,7 +1184,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1181,7 +1214,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1210,7 +1244,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1239,7 +1274,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1268,7 +1304,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1297,7 +1334,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1326,7 +1364,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1355,7 +1394,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1384,7 +1424,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1413,7 +1454,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1442,7 +1484,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1471,7 +1514,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1500,7 +1544,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1529,7 +1574,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1558,7 +1604,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1587,7 +1634,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1616,7 +1664,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1645,7 +1694,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1674,7 +1724,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1703,7 +1754,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1732,7 +1784,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1761,7 +1814,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1790,7 +1844,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1819,7 +1874,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1848,7 +1904,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1877,7 +1934,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1906,7 +1964,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1935,7 +1994,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1964,7 +2024,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -1993,7 +2054,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2022,7 +2084,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2051,7 +2114,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2080,7 +2144,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2109,7 +2174,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2138,7 +2204,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2167,7 +2234,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2196,7 +2264,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2225,7 +2294,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2254,7 +2324,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2283,7 +2354,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2312,7 +2384,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2341,7 +2414,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2370,7 +2444,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2399,7 +2474,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2428,7 +2504,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2457,7 +2534,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2486,7 +2564,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2515,7 +2594,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2544,7 +2624,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2573,7 +2654,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2602,7 +2684,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2631,7 +2714,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2660,7 +2744,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2689,7 +2774,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2718,7 +2804,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2747,7 +2834,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2776,7 +2864,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2805,7 +2894,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2834,7 +2924,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2863,7 +2954,8 @@ class LeaderBoardPage extends StatelessWidget {
       'name': 'pia99',
       'score': 2345,
       'picture': 'profile-6.jpg',
-    },{
+    },
+    {
       'name': 'adam56dhddhdhdhddhdhddhdddhddhdhdhddh',
       'score': 781,
       'picture': 'profile-1.jpg',
@@ -2903,16 +2995,15 @@ class LeaderBoardPage extends StatelessWidget {
         backgroundColor: AppColors.background,
         elevation: appBarShadowElevation,
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Podium(data: data),
-            Expanded(
-              child: Board(data: data),
-            ),
-          ],
-        ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Podium(data: data),
+          const SizedBox(height: AppSpacing.xl),
+          Expanded(
+            child: Board(data: data),
+          ),
+        ],
       ),
     );
   }

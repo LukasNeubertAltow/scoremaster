@@ -8,6 +8,8 @@ class PodiumPlace extends StatelessWidget {
     Key? key,
     required this.index,
     required this.picture,
+    required this.name,
+    required this.score,
   }) : super(key: key);
 
   final int index;
@@ -19,6 +21,8 @@ class PodiumPlace extends StatelessWidget {
   final double imageBorder = 10;
   final String picture;
   final int indexHelper = 2;
+  final String name;
+  final int score;
 
   @override
   Widget build(BuildContext context) {
@@ -73,6 +77,24 @@ class PodiumPlace extends StatelessWidget {
               ),
             ),
           ],
+        ),
+        const SizedBox(
+          height: AppSpacing.l,
+        ),
+        Text(
+          '@$name',
+          overflow: TextOverflow.ellipsis,
+          style: const TextStyle(fontSize: AppFontSize.bodyText1),
+        ),
+        const SizedBox(
+          height: AppSpacing.xs,
+        ),
+        Text(
+          score.toString(),
+          style: const TextStyle(
+            fontSize: AppFontSize.bodyText1,
+            color: AppColors.accent,
+          ),
         ),
       ],
     );

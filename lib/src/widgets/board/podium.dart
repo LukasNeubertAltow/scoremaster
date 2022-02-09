@@ -14,7 +14,7 @@ class Podium extends StatelessWidget {
   final int place3 = 2;
   final double positionLeftRightPlace = 25;
   final double positionTop = 80;
-  final double viewHeight = 300;
+  final double viewHeight = 360;
   final double viewWidth = 428;
   final int index1 = 1;
   final int index2 = 2;
@@ -61,6 +61,8 @@ class Podium extends StatelessWidget {
                 left: positionLeftRightPlace,
                 top: positionTop,
                 child: PodiumPlace(
+                  name: data[place2]['name'],
+                  score: data[place2]['score'],
                   picture: data[place2]['picture'],
                   index: index2,
                 ),
@@ -69,12 +71,16 @@ class Podium extends StatelessWidget {
                 right: positionLeftRightPlace,
                 top: positionTop,
                 child: PodiumPlace(
+                  name: data[place3]['name'],
+                  score: data[place3]['score'],
                   picture: data[place3]['picture'],
                   index: index3,
                 ),
               ),
               Positioned(
                 child: PodiumPlace(
+                  name: data[place1]['name'],
+                  score: data[place1]['score'],
                   picture: data[place1]['picture'],
                   index: index1,
                 ),

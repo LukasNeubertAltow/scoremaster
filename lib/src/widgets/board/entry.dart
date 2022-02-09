@@ -43,59 +43,63 @@ class Entry extends StatelessWidget {
           ],
         ),
         const SizedBox(width: AppSpacing.xl),
-        Container(
-          decoration: BoxDecoration(
-            color: AppColors.primary,
-            borderRadius: BorderRadius.all(
-              Radius.circular(radius),
+        Expanded(
+          child: Container(
+            decoration: BoxDecoration(
+              color: AppColors.primary,
+              borderRadius: BorderRadius.all(
+                Radius.circular(radius),
+              ),
             ),
-          ),
-          child: Row(
-            children: <Widget>[
-              ClipRRect(
-                borderRadius: BorderRadius.all(
-                  Radius.circular(radius),
-                ),
-                child: SizedBox(
-                  height: imageSize,
-                  width: imageSize,
-                  child: Image.asset(
-                    'assets/mock/pictures/$picture',
-                    fit: BoxFit.cover,
+            child: Row(
+              children: <Widget>[
+                ClipRRect(
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(radius),
+                  ),
+                  child: SizedBox(
+                    height: imageSize,
+                    width: imageSize,
+                    child: Image.asset(
+                      'assets/mock/pictures/$picture',
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 ),
-              ),
-              Container(
-                padding: const EdgeInsets.all(AppSpacing.xl),
-                child: Row(
-                  children: <Widget>[
-                    SizedBox(
-                      width: nameWidth,
-                      child: Text(
-                        '@$name',
-                        overflow: TextOverflow.ellipsis,
-                        style: const TextStyle(fontSize: AppFontSize.bodyText1),
-                      ),
-                    ),
-                    SizedBox(
-                      width: spaceNameScore,
-                    ),
-                    SizedBox(
-                      width: scoreWidth,
-                      child: Text(
-                        score.toString(),
-                        overflow: TextOverflow.ellipsis,
-                        textDirection: TextDirection.rtl,
-                        style: const TextStyle(
-                          fontSize: AppFontSize.bodyText1,
-                          color: AppColors.accent,
+                Expanded(
+                  child: Container(
+                    padding: const EdgeInsets.all(AppSpacing.xl),
+                    child: Row(
+                      children: <Widget>[
+                        Expanded(
+                          child: SizedBox(
+                            child: Text(
+                              '@$name',
+                              overflow: TextOverflow.ellipsis,
+                              style: const TextStyle(
+                                fontSize: AppFontSize.bodyText1,
+                              ),
+                            ),
+                          ),
                         ),
-                      ),
+                        SizedBox(
+                          width: scoreWidth,
+                          child: Text(
+                            score.toString(),
+                            overflow: TextOverflow.ellipsis,
+                            textDirection: TextDirection.rtl,
+                            style: const TextStyle(
+                              fontSize: AppFontSize.bodyText1,
+                              color: AppColors.accent,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
-                  ],
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ],
