@@ -51,17 +51,14 @@ class Entry extends StatelessWidget {
             ),
             child: Row(
               children: <Widget>[
-                ClipRRect(
-                  borderRadius: const BorderRadius.all(
-                    Radius.circular(_radius),
-                  ),
-                  child: SizedBox(
-                    height: _imageSize,
-                    width: _imageSize,
-                    child: Image.asset(
-                      'assets/mock/pictures/$picture',
-                      fit: BoxFit.cover,
-                    ),
+                Container(
+                  height: _imageSize,
+                  width: _imageSize,
+                  decoration: const BoxDecoration(shape: BoxShape.circle),
+                  clipBehavior: Clip.antiAlias,
+                  child: Image.asset(
+                    'assets/mock/pictures/$picture',
+                    fit: BoxFit.cover,
                   ),
                 ),
                 Expanded(

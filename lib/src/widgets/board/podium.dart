@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:scoremaster/src/models/score_with_user/score_with_user_model.dart';
 import './podium_place.dart';
 import '../../config/app_colors.dart';
 
@@ -8,11 +9,11 @@ class Podium extends StatelessWidget {
     required this.data,
   }) : super(key: key);
 
-  Map get _data1 => data[_place1];
-  Map get _data2 => data[_place2];
-  Map get _data3 => data[_place3];
+  ScoreWithUserModel get _dataPlace1 => data[_place1];
+  ScoreWithUserModel get _dataPlace2 => data[_place2];
+  ScoreWithUserModel get _dataPlace3 => data[_place3];
 
-  final List data;
+  final List<ScoreWithUserModel> data;
   static const int _place1 = 0;
   static const int _place2 = 1;
   static const int _place3 = 2;
@@ -69,9 +70,9 @@ class Podium extends StatelessWidget {
                 left: _positionLeftRightPlace,
                 top: _positionTop,
                 child: PodiumPlace(
-                  name: _data2['name'],
-                  score: _data2['score'],
-                  picture: _data2['picture'],
+                  name: _dataPlace2.user.username,
+                  score: _dataPlace2.score,
+                  picture: 'profile-1.jpg',
                   index: _index2,
                 ),
               ),
@@ -79,17 +80,17 @@ class Podium extends StatelessWidget {
                 right: _positionLeftRightPlace,
                 top: _positionTop,
                 child: PodiumPlace(
-                  name: _data3['name'],
-                  score: _data3['score'],
-                  picture: _data3['picture'],
+                  name: _dataPlace3.user.username,
+                  score: _dataPlace3.score,
+                  picture: 'profile-1.jpg',
                   index: _index3,
                 ),
               ),
               Positioned(
                 child: PodiumPlace(
-                  name: _data1['name'],
-                  score: _data1['score'],
-                  picture: _data1['picture'],
+                  name: _dataPlace1.user.username,
+                  score: _dataPlace1.score,
+                  picture: 'profile-1.jpg',
                   index: _index1,
                 ),
               ),

@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'score_model.freezed.dart';
@@ -10,10 +9,8 @@ class ScoreModel with _$ScoreModel {
   @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
   const factory ScoreModel({
     required String uid,
-    // ignore: non_constant_identifier_names
-    required String game_uid,
-    // ignore: non_constant_identifier_names
-    required String user_uid,
+    required String gameUid,
+    required String userUid,
     required int score,
     required String date,
   }) = _ScoreModel;
