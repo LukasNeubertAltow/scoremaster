@@ -1,10 +1,12 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:scoremaster/src/models/score_with_user/score_with_user_model.dart';
 import './podium_place.dart';
 import '../../config/app_colors.dart';
 
 class Podium extends StatelessWidget {
-  const Podium({
+  Podium({
     Key? key,
     required this.data,
   }) : super(key: key);
@@ -35,6 +37,10 @@ class Podium extends StatelessWidget {
   static const double _viewWidth = 428;
 
   static const double _radius = 200;
+
+  final _random = Random();
+  static const int _minBildNumber = 1;
+  static const int _maxBildNumber = 8;
 
   @override
   Widget build(BuildContext context) {
@@ -72,7 +78,7 @@ class Podium extends StatelessWidget {
                 child: PodiumPlace(
                   name: _dataPlace2.user.username,
                   score: _dataPlace2.score,
-                  picture: 'profile-1.jpg',
+                  picture: 'profile-${_random.nextInt(_maxBildNumber) + _minBildNumber}.jpg',
                   index: _index2,
                 ),
               ),
@@ -82,7 +88,7 @@ class Podium extends StatelessWidget {
                 child: PodiumPlace(
                   name: _dataPlace3.user.username,
                   score: _dataPlace3.score,
-                  picture: 'profile-1.jpg',
+                  picture: 'profile-${_random.nextInt(_maxBildNumber) + _minBildNumber}.jpg',
                   index: _index3,
                 ),
               ),
@@ -90,7 +96,7 @@ class Podium extends StatelessWidget {
                 child: PodiumPlace(
                   name: _dataPlace1.user.username,
                   score: _dataPlace1.score,
-                  picture: 'profile-1.jpg',
+                  picture: 'profile-${_random.nextInt(_maxBildNumber) + _minBildNumber}.jpg',
                   index: _index1,
                 ),
               ),

@@ -1,10 +1,12 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import '../../config/app_spacing.dart';
 
 import './entry.dart';
 
 class Board extends StatelessWidget {
-  const Board({
+  Board({
     Key? key,
     required this.data,
   }) : super(key: key);
@@ -18,6 +20,10 @@ class Board extends StatelessWidget {
 
   static const int _sublistHelper = 3;
 
+  final _random = Random();
+  static const int _minBildNumber = 1;
+  static const int _maxBildNumber = 8;
+
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
@@ -29,7 +35,7 @@ class Board extends StatelessWidget {
         return Entry(
           name: _boardList[index].user.username,
           score: _boardList[index].score,
-          picture: 'profile-2.jpg',
+          picture: 'profile-${_random.nextInt(_maxBildNumber) + _minBildNumber}.jpg',
           id: index + _indexCountStart,
         );
       },

@@ -10,13 +10,23 @@ class UserService {
   static UserService get instance => _instance;
 
   Future<List<UserModel>> findAll() async {
-    final String response =
-        await rootBundle.loadString('assets/mock/data/users.json');
+    final String response = await rootBundle.loadString('assets/mock/data/users.json');
 
     List<dynamic> data = await json.decode(response);
 
     return data.map((value) {
       return UserModel.fromJson(value);
     }).toList();
+  }
+
+  Future<List> getUserIds() async {
+    var  userIdList = [];
+    var users = await findAll();
+
+    for (var user in users) {
+      userIdList.add(user.uid);
+    }
+
+    return userIdList;
   }
 }
