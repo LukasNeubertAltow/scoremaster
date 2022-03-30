@@ -8,17 +8,22 @@ class PodiumPlace extends StatelessWidget {
     Key? key,
     required this.index,
     required this.picture,
+    required this.name,
+    required this.score,
   }) : super(key: key);
 
   final int index;
-  final double iconSize = 35;
-  final double radius = 100;
-  final double imageSizeBig = 165;
-  final double imageSize = 130;
-  final double imageBorderBig = 15;
-  final double imageBorder = 10;
   final String picture;
-  final int indexHelper = 2;
+  final String name;
+  final int score;
+
+  static const double _iconSize = 35;
+  static const double _radius = 100;
+  static const double _imageSizeBig = 165;
+  static const double _imageSize = 130;
+  static const double _imageBorderBig = 15;
+  static const double _imageBorder = 10;
+  static const int _indexHelper = 2;
 
   @override
   Widget build(BuildContext context) {
@@ -28,16 +33,16 @@ class PodiumPlace extends StatelessWidget {
           index.toString(),
           style: const TextStyle(fontSize: AppFontSize.bodyText1),
         ),
-        index < indexHelper
-            ? Icon(
+        index < _indexHelper
+            ? const Icon(
                 Icons.assistant_photo_rounded,
                 color: AppColors.accent,
-                size: iconSize,
+                size: _iconSize,
               )
-            : Icon(
+            : const Icon(
                 Icons.arrow_drop_up_sharp,
                 color: AppColors.accent,
-                size: iconSize,
+                size: _iconSize,
               ),
         const SizedBox(
           height: AppSpacing.xl,
@@ -46,26 +51,26 @@ class PodiumPlace extends StatelessWidget {
           alignment: AlignmentDirectional.center,
           children: [
             Container(
-              height: index < indexHelper
-                  ? imageSizeBig + imageBorderBig
-                  : imageSize + imageBorder,
-              width: index < indexHelper
-                  ? imageSizeBig + imageBorderBig
-                  : imageSize + imageBorder,
-              decoration: BoxDecoration(
+              height: index < _indexHelper
+                  ? _imageSizeBig + _imageBorderBig
+                  : _imageSize + _imageBorder,
+              width: index < _indexHelper
+                  ? _imageSizeBig + _imageBorderBig
+                  : _imageSize + _imageBorder,
+              decoration: const BoxDecoration(
                 color: AppColors.accent,
                 borderRadius: BorderRadius.all(
-                  Radius.circular(radius),
+                  Radius.circular(_radius),
                 ),
               ),
             ),
             ClipRRect(
-              borderRadius: BorderRadius.all(
-                Radius.circular(radius),
+              borderRadius: const BorderRadius.all(
+                Radius.circular(_radius),
               ),
               child: SizedBox(
-                height: index < indexHelper ? imageSizeBig : imageSize,
-                width: index < indexHelper ? imageSizeBig : imageSize,
+                height: index < _indexHelper ? _imageSizeBig : _imageSize,
+                width: index < _indexHelper ? _imageSizeBig : _imageSize,
                 child: Image.asset(
                   'assets/mock/pictures/$picture',
                   fit: BoxFit.cover,
@@ -73,6 +78,24 @@ class PodiumPlace extends StatelessWidget {
               ),
             ),
           ],
+        ),
+        const SizedBox(
+          height: AppSpacing.l,
+        ),
+        Text(
+          '@$name',
+          overflow: TextOverflow.ellipsis,
+          style: const TextStyle(fontSize: AppFontSize.bodyText1),
+        ),
+        const SizedBox(
+          height: AppSpacing.xs,
+        ),
+        Text(
+          score.toString(),
+          style: const TextStyle(
+            fontSize: AppFontSize.bodyText1,
+            color: AppColors.accent,
+          ),
         ),
       ],
     );
